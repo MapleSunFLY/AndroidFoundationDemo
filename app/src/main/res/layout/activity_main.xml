@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.foundationdemo.MainActivity">
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/phone_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话拨号器"/>
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短信发送"/>
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件存储"/>
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/xml_parse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XML解析"/>
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/shard_perferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shardperferences存储"/>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SQLite数据库"/>
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/person_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ContentPervider共享数据"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.foundationdemo.sqlite.SQLiteActivity">
+
+    <EditText
+        android:id="@+id/person_name_edittext"
+        style="@style/MatchWrap"
+        android:hint="请输入数据类容name"/>
+    <EditText
+        android:id="@+id/person_phone_edittext"
+        style="@style/MatchWrap"
+        android:inputType="number"
+        android:hint="请输入数据类容phone"/>
+    <EditText
+        android:id="@+id/person_id_edittext"
+        style="@style/MatchWrap"
+        android:inputType="number"
+        android:visibility="gone" />
+    <EditText
+            android:id="@+id/person_num1_edittext"
+            style="@style/MatchWrap"
+            android:inputType="number"
+            android:visibility="gone"
+            android:hint="请输入跳过条数"/>
+    <EditText
+            android:id="@+id/person_num2_edittext"
+            style="@style/MatchWrap"
+            android:inputType="number"
+            android:visibility="gone"
+            android:hint="请输入查询条数"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/MatchWrap">
+        <Button
+            android:id="@+id/save_sql_button"
+            style="@style/WrapWrap"
+            android:onClick="onClick"
+            android:text="增加数据"/>
+        <Button
+            android:id="@+id/delete_sql_button"
+            style="@style/WrapWrap"
+            android:onClick="onClick"
+            android:text="删除数据"/>
+        <Button
+            android:id="@+id/update_sql_button"
+            style="@style/WrapWrap"
+            android:onClick="onClick"
+            android:text="修改数据"/>
+        <Button
+            android:id="@+id/find_sql_button"
+            style="@style/WrapWrap"
+            android:onClick="onClick"
+            android:text="查询数据"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/scroll_date_sql_button"
+        style="@style/WrapWrap"
+        android:onClick="onClick"
+        android:text="查询数据列表"/>
+    <TextView
+        android:id="@+id/text"
+        style="@style/WrapWrap"/>
+
+</LinearLayout>

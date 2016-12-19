@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sms.SMSActivity">
+
+    <EditText
+        android:id="@+id/sms_phone_number_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="number|phone"
+        android:hint="请输入电话号码"/>
+    <EditText
+        android:id="@+id/sms_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:hint="请输入短信内容"/>
+    <Button
+        android:id="@+id/sms_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送短信"/>
+</LinearLayout>

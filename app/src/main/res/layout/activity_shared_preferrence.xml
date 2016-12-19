@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:orientation="vertical"
+    tools:context=".sharedpreference.SharedPreferencesActivity">
+
+    <EditText
+        android:id="@+id/shard_perferences_name_edittext"
+        style="@style/MatchWrap"
+        android:hint="请输入名称" />`
+
+    <EditText
+        android:id="@+id/shard_perferences_age_edittext"
+        style="@style/MatchWrap"
+        android:hint="请输入年龄" />
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/MatchWrap">
+        <Button
+            android:id="@+id/shard_perferences_storage_button"
+            style="@style/WrapWrap"
+            android:onClick="onClick"
+            android:text="保存数据"/>
+        <Button
+            android:id="@+id/shard_perferences_read_button"
+            style="@style/WrapWrap"
+            android:onClick="onClick"
+            android:text="读取数据"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shard_perferences_text"
+        style="@style/WrapWrap"/>
+
+</LinearLayout>

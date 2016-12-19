@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".file.FileActivity">
+
+    <EditText
+        android:id="@+id/file_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="请输入文件名称"/>
+    <EditText
+        android:id="@+id/file_text_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:hint="请输入文件内容"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/file_writing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+        <Button
+            android:id="@+id/file_read_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/file_read_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
