@@ -110,6 +110,8 @@ public class PersonProvider extends ContentProvider {
                 Uri insertUri = Uri.parse("content://com.example.administrator.foundationdemo.provider.PersonProvider/person/"+rowid);
                 //方法二：Android提供API（推荐）
                 insertUri = ContentUris.withAppendedId(uri,rowid);
+                //设置数据的变化通知--> (uri,设置必须要的数据变化的监听者)
+                this.getContext().getContentResolver().notifyChange(uri,null);
                 return insertUri;
             default:
                 throw new IllegalArgumentException("this id Unknown Uri "+uri);

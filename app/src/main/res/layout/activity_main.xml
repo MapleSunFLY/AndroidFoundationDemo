@@ -50,4 +50,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ContentPervider共享数据"/>
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/contacts_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="操作通讯录"/>
 </LinearLayout>

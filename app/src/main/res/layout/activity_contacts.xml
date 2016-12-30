@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.foundationdemo.contactsprovider.ContactsActivity">
+
+    <EditText
+        android:id="@+id/contact_name"
+        style="@style/MatchWrap"
+        android:hint="请输入联系人姓名" />
+    <EditText
+        android:id="@+id/contact_phone"
+        style="@style/MatchWrap"
+        android:inputType="phone"
+        android:hint="请输入联系人电话" />
+    <EditText
+        android:id="@+id/contact_email"
+        style="@style/MatchWrap"
+        android:inputType="textEmailAddress"
+        android:hint="请输入联系人Email" />
+    <Button
+        android:id="@+id/add_contact_button1"
+        android:onClick="onClick"
+        style="@style/WrapWrap"
+        android:text="添加联系人1"/>
+    <Button
+        android:id="@+id/add_contact_button2"
+        android:onClick="onClick"
+        style="@style/WrapWrap"
+        android:text="添加联系人2"/>
+    <EditText
+        android:id="@+id/contact_visit_phone"
+        style="@style/MatchWrap"
+        android:inputType="phone"
+        android:hint="请输入查询电话号码"/>
+    <Button
+        android:id="@+id/visit_contact_button"
+        android:onClick="onClick"
+        style="@style/WrapWrap"
+        android:text="查询联系人姓名"/>
+   <Button
+       android:id="@+id/visit_contacts_button"
+       android:onClick="onClick"
+       style="@style/WrapWrap"
+       android:text="查询所有"/>
+    <TextView
+        android:id="@+id/contact_text"
+        style="@style/WrapWrap"/>
+</LinearLayout>
