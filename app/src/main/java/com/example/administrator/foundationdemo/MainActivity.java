@@ -6,8 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.administrator.foundationdemo.animation.AnimationActivity;
 import com.example.administrator.foundationdemo.contactsprovider.ContactsActivity;
 import com.example.administrator.foundationdemo.file.FileActivity;
+import com.example.administrator.foundationdemo.http.HttpImageActivity;
+import com.example.administrator.foundationdemo.myfileobserver.FileObserverActivity;
 import com.example.administrator.foundationdemo.phonecall.PhoneCallActivity;
 import com.example.administrator.foundationdemo.provider.ProviderActivity;
 import com.example.administrator.foundationdemo.sharedpreference.SharedPreferencesActivity;
@@ -51,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.contacts_provider:
                 mIntent.setClass(MainActivity.this, ContactsActivity.class);
+                break;
+            case R.id.http_image:
+                mIntent.setClass(MainActivity.this, HttpImageActivity.class);
+                break;
+            case R.id.tween_animation:
+                mIntent.setClass(MainActivity.this, AnimationActivity.class);
+                break;
+            case R.id.fileobserver:
+                mIntent.setClass(MainActivity.this, FileObserverActivity.class);
                 break;
             default:
                 Toast.makeText(this,"What did you do",Toast.LENGTH_SHORT).show();

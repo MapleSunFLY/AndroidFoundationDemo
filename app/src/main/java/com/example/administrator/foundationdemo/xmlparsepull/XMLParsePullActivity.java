@@ -34,7 +34,7 @@ public class XMLParsePullActivity extends AppCompatActivity {
 
         try {
             InputStream xml = this.getResources().getAssets().open("person.xml");// 获取assets下XM文件输出流
-           List<Person> persons = PersonService.getPersonXML(xml);
+            List<Person> persons = PersonService.getPersonXML(xml);
             for (Person person : persons ){
                 String text = xml_parse_text.getText()+" \n id："+person.getId()+"\n name："+person.getName()+"\nage："+person.getAge();
                 Log.d("FLY",text);

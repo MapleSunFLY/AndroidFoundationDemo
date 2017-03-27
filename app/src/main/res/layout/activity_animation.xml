@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.foundationdemo.animation.AnimationActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/MatchWrap">
+        <Button
+            android:id="@+id/tweened_rotate_btn"
+            style="@style/WrapWrap"
+            android:text="旋转" />
+        <Button
+            android:id="@+id/tweened_scale_btn"
+            style="@style/WrapWrap"
+            android:text="缩放" />
+        <Button
+            android:id="@+id/tweened_alpha_btn"
+            style="@style/WrapWrap"
+            android:text="淡入淡出" />
+        <Button
+            android:id="@+id/tweened_translate_btn"
+            style="@style/WrapWrap"
+            android:text="移动" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/tweened_img"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/mz"/>
+    <Button
+        android:id="@+id/Tween_Animations"
+        style="@style/WrapWrap"
+        android:text="帧动画"/>
+</LinearLayout>

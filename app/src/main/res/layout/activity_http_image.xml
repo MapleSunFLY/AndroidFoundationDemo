@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.foundationdemo.http.HttpImageActivity">
+    <TextView
+        style="@style/WrapWrap"
+        android:text="网络图片地址"/>
+    <EditText
+        android:id="@+id/http_image_edittext"
+        style="@style/MatchWrap"/>
+    <Button
+        android:id="@+id/http_image_button"
+        style="@style/WrapWrap"
+        android:text="获取" />
+    <ImageView
+        android:id="@+id/http_image_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</LinearLayout>
