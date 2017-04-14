@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 同级的item有几个则在toolbar右边显示几个 -->
+    <!--
+        id:之后设置点击事件的时候找到当前菜单项的唯一标识
+        title:必填项，Toolbar栏的menu标题
+        [如果存在icon，则显示icon图标，不显示文字]
+        [如果不存在icon,则显示文字]
+        app:showAsAction = "ifRoom" ：显示为一个行为
+        android:showAsAction="ifRoom":icon失效显示图标为“3个竖立的点”
+    -->
+
+    <item
+        android:id="@+id/item_search"
+        android:icon="@drawable/ic_main_menu_search"
+        android:title="搜索"
+        app:showAsAction="ifRoom" />
+
+    <!-- item包含menu表示该menu是item下的子菜单 -->
+    <item android:id="@+id/toolbar_r_img"
+        android:title="分享"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_main_menu_moreoverflow_mtrl_alpha"
+        app:showAsAction="ifRoom">
+    <menu>
+        <!-- 将group中的菜单项放于一个组里面 -->
+            <item
+                android:id="@+id/item_chat"
+                android:icon="@drawable/ic_main_menu_chat"
+                android:title="@string/main_menu_chat"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item_add_person"
+                android:icon="@drawable/ic_main_menu_add_person"
+                android:title="@string/main_menu_add_person"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item_richscan"
+                android:icon="@drawable/ic_main_menu_richscan"
+                android:title="@string/main_menu_richscan"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item_money"
+                android:icon="@drawable/ic_main_menu_money"
+                android:title="@string/main_menu_money"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/item_help"
+                android:icon="@drawable/ic_main_menu_help"
+                android:title="@string/main_menu_help"
+                app:showAsAction="ifRoom" />
+    </menu>
+</item>
+
+</menu>

@@ -34,7 +34,7 @@ public class ContactsService {
         while (cursor.moveToNext()){
             ContactText conract = new ContactText();
             int contactcId = cursor.getInt(0);
-            uri = Uri.parse("content://com.android.contacts/contacts/" + contactcId + "/data");//某一个联系人工作路径
+            uri = Uri.parse("content://com.android.contacts/contacts/" + contactcId + "/Data");//某一个联系人工作路径
             Cursor dateCursor = resolver.query(uri, new String[]{"mimetype","data1","data2"}, null, null, null);//获取某一个联系人的信息
             while (dateCursor.moveToNext()){
                 String date = dateCursor.getString(dateCursor.getColumnIndex("data1"));//信息
@@ -59,7 +59,7 @@ public class ContactsService {
     //根据号码获取联系人的姓名
     public String visitContactNameByPhoneNumber(String phoneNumber){
         String name = null;
-        Uri uri = Uri.parse("content://com.android.contacts/data/phones/filter/"+phoneNumber);//电话查询的工作路径
+        Uri uri = Uri.parse("content://com.android.contacts/Data/phones/filter/"+phoneNumber);//电话查询的工作路径
         ContentResolver resolver = context.getContentResolver();
         Cursor cursor = resolver.query(uri,new String[]{"display_name"},null,null,null);
         if (cursor.moveToFirst()){
@@ -78,7 +78,7 @@ public class ContactsService {
         ContentValues values = new ContentValues();
         long contacrId = ContentUris.parseId(resolver.insert(uri,values));
         //信息Uri
-        uri = Uri.parse("content://com.android.contacts/data");
+        uri = Uri.parse("content://com.android.contacts/Data");
         //添加姓名
         values.put("raw_contact_id",contacrId);
         values.put("mimetype","vnd.android.cursor.item/name");
@@ -110,7 +110,7 @@ public class ContactsService {
                 .build();
         operations.add(operation_1);
 
-        uri = Uri.parse("content://com.android.contacts/data");
+        uri = Uri.parse("content://com.android.contacts/Data");
         ContentProviderOperation operation_2 = ContentProviderOperation.newInsert(uri)
                 .withValueBackReference("raw_contact_id",0)//0为list中第一个对象，意思是使用第一个对象操作返回记录ID为这个字段的
                 .withValue("mimetype","vnd.android.cursor.item/name")

@@ -30,10 +30,10 @@ public class FileService {
      * @throws Exception
      */
     public void writing(String fileName, String fileText) throws Exception{
-        //默认保存路径../data/date/package name/file目录下
+        //默认保存路径../Data/date/package name/file目录下
         //Android还提供了两种方法getCacheDir()和getFilesDir()方法：
-        //getCacheDir()方法用于获取/data/data/<package name>/cache目录
-        //getFilesDir()方法用于获取/data/data/<package name>/file目录
+        //getCacheDir()方法用于获取/Data/Data/<package name>/cache目录
+        //getFilesDir()方法用于获取/Data/Data/<package name>/file目录
 
         //openFileOutput（Sting ，int） 快速获取一个输出流，Sting==>文件名称，int操作模式（可看源码信息）
         //Context.MODE_PRIVATE:为默认操作模式，代表该文件是私有数据，只能被该应用访问，在该模式下，写入的内容会覆盖源文件的内容；
@@ -68,7 +68,7 @@ public class FileService {
 
 
     public String read(String fileName) throws Exception{
-        //默认读取路径../data/date/package name/file目录下
+        //默认读取路径../Data/date/package name/file目录下
         FileInputStream fileInputStream = context.openFileInput(fileName);
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         byte[] buffer = new byte[1024];

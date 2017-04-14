@@ -13,9 +13,11 @@ import com.example.administrator.foundationdemo.http.HttpImageActivity;
 import com.example.administrator.foundationdemo.myfileobserver.FileObserverActivity;
 import com.example.administrator.foundationdemo.phonecall.PhoneCallActivity;
 import com.example.administrator.foundationdemo.provider.ProviderActivity;
+import com.example.administrator.foundationdemo.recyclerview.RecyclerViewActivity;
 import com.example.administrator.foundationdemo.sharedpreference.SharedPreferencesActivity;
 import com.example.administrator.foundationdemo.sms.SMSActivity;
 import com.example.administrator.foundationdemo.sqlite.SQLiteActivity;
+import com.example.administrator.foundationdemo.toolbarmenutext.ToolbarMenu;
 import com.example.administrator.foundationdemo.xmlparsepull.XMLParsePullActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -63,6 +65,12 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.fileobserver:
                 mIntent.setClass(MainActivity.this, FileObserverActivity.class);
+                break;
+            case R.id.toolber_menu:
+                mIntent.setClass(MainActivity.this, ToolbarMenu.class);
+                break;
+            case R.id.recyclerview:
+                mIntent.setClass(MainActivity.this, RecyclerViewActivity.class);
                 break;
             default:
                 Toast.makeText(this,"What did you do",Toast.LENGTH_SHORT).show();

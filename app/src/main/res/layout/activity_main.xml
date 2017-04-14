@@ -68,6 +68,16 @@
                 android:id="@+id/fileobserver"
                 style="@style/WrapWrap"
                 android:text="文件信息改变的服务"/>
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/toolber_menu"
+                style="@style/WrapWrap"
+                android:text="Toolber溢出菜单"/>
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/recyclerview"
+                style="@style/WrapWrap"
+                android:text="RecyclerView"/>
         </LinearLayout>
 
     </ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="#fcfcfc"
+    android:layout_marginTop ="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_item_my_relative"
+        android:layout_width="0dp"
+        android:background="@null"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/recyclerview_item_my_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="测试"
+            android:id="@+id/recyclerview_item_my_name"
+            android:layout_alignTop="@+id/recyclerview_item_my_photo"
+            android:layout_toRightOf="@+id/recyclerview_item_my_photo"
+            android:layout_toEndOf="@+id/recyclerview_item_my_photo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="测试"
+            android:id="@+id/recyclerview_item_my_number"
+            android:layout_marginTop ="5dp"
+            android:layout_below="@id/recyclerview_item_my_name"
+            android:layout_alignLeft="@id/recyclerview_item_my_name"
+            android:layout_alignStart="@id/recyclerview_item_my_name" />
+    </RelativeLayout>
+    <RelativeLayout
+
+        android:background="@null"
+        android:id="@+id/recyclerview_item_my_two_relative"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+        <ImageView
+            android:id="@+id/recyclerview_item_my_two"
+            android:background="@null"
+            android:src="@mipmap/ic_launcher"
+            style="@style/WrapWrap"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</LinearLayout>
