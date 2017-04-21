@@ -2,6 +2,7 @@ package com.example.administrator.foundationdemo.recyclerview;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.administrator.foundationdemo.R;
@@ -59,6 +60,7 @@ public abstract class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
                 break;
         }
         MyViewHolder holder = MyViewHolder.get(mContext,null,parent,mLayoutId);
+        setListener(parent, holder);
         return holder;
     }
 
@@ -94,5 +96,58 @@ public abstract class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     @Override
     public int getItemCount() {
         return mDataSet.size();
+    }
+
+
+    /**
+     * java回调机制，依赖于子Item View的onClickListener及onLongClickListener。
+     * @param <T> //数据类
+     */
+    public interface OnItemClickListener<T>{
+        //RecyclerView监听
+        void onItemClick(ViewGroup parent, View view, T t, int position);
+    }
+    public interface OnItemLongClickListener<T>{
+        //长按监听
+        boolean onItemLongClick(ViewGroup parent, View view, T t, int position);
+    }
+
+    private OnItemClickListener mOnItemClickListener;
+    private OnItemLongClickListener mOnItemLongClickListener;
+
+    public void setOnItemClickListener(OnItemClickListener mOnItemClickListener){
+        this.mOnItemClickListener = mOnItemClickListener;
+    }
+
+    public void setOnItemLongClickListener(OnItemLongClickListener mOnItemLongClickListener) {
+        this.mOnItemLongClickListener = mOnItemLongClickListener;
+    }
+
+    protected void setListener(final ViewGroup parent, final MyViewHolder holder){
+        //判断是否设置了监听器
+        if(mOnItemClickListener != null) {
+            //为ItemView设置监听器
+            holder.getConvertView().setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = holder.getLayoutPosition();
+                    mOnItemClickListener.onItemClick(parent, v, mDataSet.get(position), position);
+                }
+            });
+        }
+        if(mOnItemLongClickListener != null){
+            holder.getConvertView().setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    if (mOnItemLongClickListener != null) {
+                        int position = holder.getLayoutPosition();
+                        return mOnItemLongClickListener.onItemLongClick(parent, v, mDataSet.get(position), position);
+                        //返回true 表示消耗了事件 事件不会继续传递
+                    }
+
+                    return false;
+                }
+            });
+        }
     }
 }

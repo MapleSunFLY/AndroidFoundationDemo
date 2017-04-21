@@ -78,6 +78,11 @@
                 android:id="@+id/recyclerview"
                 style="@style/WrapWrap"
                 android:text="RecyclerView"/>
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/timer"
+                style="@style/WrapWrap"
+                android:text="计时器"/>
         </LinearLayout>
 
     </ScrollView>

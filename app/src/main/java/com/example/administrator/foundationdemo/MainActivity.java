@@ -17,6 +17,7 @@ import com.example.administrator.foundationdemo.recyclerview.RecyclerViewActivit
 import com.example.administrator.foundationdemo.sharedpreference.SharedPreferencesActivity;
 import com.example.administrator.foundationdemo.sms.SMSActivity;
 import com.example.administrator.foundationdemo.sqlite.SQLiteActivity;
+import com.example.administrator.foundationdemo.timer.TimerActivity;
 import com.example.administrator.foundationdemo.toolbarmenutext.ToolbarMenu;
 import com.example.administrator.foundationdemo.xmlparsepull.XMLParsePullActivity;
 
@@ -71,6 +72,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.recyclerview:
                 mIntent.setClass(MainActivity.this, RecyclerViewActivity.class);
+                break;
+            case R.id.timer:
+                mIntent.setClass(MainActivity.this, TimerActivity.class);
                 break;
             default:
                 Toast.makeText(this,"What did you do",Toast.LENGTH_SHORT).show();

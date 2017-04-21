@@ -48,7 +48,8 @@
             android:name=".myfileobserver.FileObserverActivity"
             android:configChanges="keyboardHidden|screenSize|orientation" />
         <activity android:name=".toolbarmenutext.ToolbarMenu" />
-        <activity android:name=".recyclerview.RecyclerViewActivity"></activity>
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name=".timer.TimerActivity"></activity>
     </application>
 
 </manifest>

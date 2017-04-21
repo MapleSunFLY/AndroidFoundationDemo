@@ -6,8 +6,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.administrator.foundationdemo.R;
 
@@ -70,6 +72,14 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 }
             }
         };
+
+        mAdapter.setOnItemClickListener(new MyAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(ViewGroup parent, View view, Object o, int position) {
+                Data data = (Data) o;
+                Toast.makeText(RecyclerViewActivity.this, data.getName() + "：  " + position, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void handlerTemplate2(MyViewHolder holder, Data data){
@@ -78,9 +88,15 @@ public class RecyclerViewActivity extends AppCompatActivity {
         TextView name = holder.getView(R.id.recyclerview_item_my_name);
         name.setText(data.getName());
         TextView number = holder.getView(R.id.recyclerview_item_my_number);
-        number.setText("微信号: "+data.getNotificationText());
+        number.setText("微信号: " + data.getNotificationText());
         ImageView two = holder.getView(R.id.recyclerview_item_my_two);
         two.setImageResource(holder.getDrawableId(data.getNotificationImg()));
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(RecyclerViewActivity.this,"two 000000 ",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
     private void handlerTemplate5(MyViewHolder holder, Data data){
         ImageView photo = holder.getView(R.id.recyclerview_item_ordinary_1_img);
