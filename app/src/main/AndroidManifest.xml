@@ -7,11 +7,13 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问SD权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!-- 访问通讯录联系人权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
 
     <application
         android:allowBackup="true"
@@ -49,7 +51,17 @@
             android:configChanges="keyboardHidden|screenSize|orientation" />
         <activity android:name=".toolbarmenutext.ToolbarMenu" />
         <activity android:name=".recyclerview.RecyclerViewActivity" />
-        <activity android:name=".timer.TimerActivity"></activity>
+        <activity android:name=".timer.TimerActivity" />
+        <activity android:name=".getphoto.GetPhotoActivity"></activity>
+        <!-- 7.0图片共享 -->
+        <provider
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
     </application>
 
 </manifest>

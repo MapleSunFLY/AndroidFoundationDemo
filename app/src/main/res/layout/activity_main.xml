@@ -75,14 +75,19 @@
                 android:text="Toolber溢出菜单"/>
             <Button
                 android:onClick="onClick"
+                android:id="@+id/timer"
+                style="@style/WrapWrap"
+                android:text="计时器"/>
+            <Button
+                android:onClick="onClick"
                 android:id="@+id/recyclerview"
                 style="@style/WrapWrap"
                 android:text="RecyclerView"/>
             <Button
                 android:onClick="onClick"
-                android:id="@+id/timer"
+                android:id="@+id/get_photo"
                 style="@style/WrapWrap"
-                android:text="计时器"/>
+                android:text="获取相册"/>
         </LinearLayout>
 
     </ScrollView>

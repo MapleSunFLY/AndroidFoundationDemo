@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.example.administrator.foundationdemo.animation.AnimationActivity;
 import com.example.administrator.foundationdemo.contactsprovider.ContactsActivity;
 import com.example.administrator.foundationdemo.file.FileActivity;
+import com.example.administrator.foundationdemo.getphoto.GetPhotoActivity;
 import com.example.administrator.foundationdemo.http.HttpImageActivity;
 import com.example.administrator.foundationdemo.myfileobserver.FileObserverActivity;
 import com.example.administrator.foundationdemo.phonecall.PhoneCallActivity;
@@ -75,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.timer:
                 mIntent.setClass(MainActivity.this, TimerActivity.class);
+                break;
+            case R.id.get_photo:
+                mIntent.setClass(MainActivity.this, GetPhotoActivity.class);
                 break;
             default:
                 Toast.makeText(this,"What did you do",Toast.LENGTH_SHORT).show();
