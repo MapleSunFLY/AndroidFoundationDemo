@@ -11,7 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.administrator.foundationdemo.R;
+
+import com.brothers.fly.aichebao.R;
 
 import java.util.ArrayList;
 import java.util.List;

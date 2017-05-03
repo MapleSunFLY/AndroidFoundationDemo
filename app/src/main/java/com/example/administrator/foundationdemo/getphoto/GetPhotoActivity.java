@@ -23,7 +23,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.administrator.foundationdemo.R;
+
+import com.brothers.fly.aichebao.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;

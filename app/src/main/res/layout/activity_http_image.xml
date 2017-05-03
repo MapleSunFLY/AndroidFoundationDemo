@@ -14,8 +14,17 @@
         android:id="@+id/http_image_button"
         style="@style/WrapWrap"
         android:text="获取" />
+    <Button
+        android:id="@+id/http_image_keep"
+        style="@style/WrapWrap"
+        android:text="保存"/>
+    <Button
+        android:id="@+id/http_image_fetch"
+        style="@style/WrapWrap"
+        android:text="查看"/>
     <ImageView
         android:id="@+id/http_image_imageview"
+        android:src="@drawable/mz"
         android:layout_width="100dp"
         android:layout_height="100dp" />
 </LinearLayout>

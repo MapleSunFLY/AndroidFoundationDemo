@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.brothers.fly.aichebao.R;
 import com.example.administrator.foundationdemo.animation.AnimationActivity;
 import com.example.administrator.foundationdemo.contactsprovider.ContactsActivity;
 import com.example.administrator.foundationdemo.file.FileActivity;
 import com.example.administrator.foundationdemo.getphoto.GetPhotoActivity;
 import com.example.administrator.foundationdemo.http.HttpImageActivity;
+import com.example.administrator.foundationdemo.map.MapActivity;
 import com.example.administrator.foundationdemo.myfileobserver.FileObserverActivity;
 import com.example.administrator.foundationdemo.phonecall.PhoneCallActivity;
 import com.example.administrator.foundationdemo.provider.ProviderActivity;
@@ -79,6 +81,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.get_photo:
                 mIntent.setClass(MainActivity.this, GetPhotoActivity.class);
+                break;
+            case R.id.map:
+                mIntent.setClass(MainActivity.this, MapActivity.class);
                 break;
             default:
                 Toast.makeText(this,"What did you do",Toast.LENGTH_SHORT).show();

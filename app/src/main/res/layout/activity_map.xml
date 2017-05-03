@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    tools:context="com.example.administrator.foundationdemo.map.MapActivity">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_viewv"
+        style="@style/MatchMatch">
+    </com.amap.api.maps.MapView>
+
+</RelativeLayout>

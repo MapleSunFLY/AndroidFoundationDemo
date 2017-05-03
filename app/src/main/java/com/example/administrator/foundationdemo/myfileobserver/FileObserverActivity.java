@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
+
 
 public class FileObserverActivity extends AppCompatActivity {
 

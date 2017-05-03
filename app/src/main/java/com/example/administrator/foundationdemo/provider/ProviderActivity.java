@@ -8,7 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
+
 
 public class ProviderActivity extends AppCompatActivity {
 

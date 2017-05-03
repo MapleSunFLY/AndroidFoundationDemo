@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
 
 public class FrameAnimationActivity extends AppCompatActivity {
 

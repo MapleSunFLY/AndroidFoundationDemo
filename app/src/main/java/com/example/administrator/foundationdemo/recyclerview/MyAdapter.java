@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
 
 import java.util.List;
 
@@ -45,7 +45,6 @@ public abstract class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
                 break;
             case ViewItems.TEMPLATE_2:
                 mLayoutId = R.layout.activity_recycler_view_recyclerview_item_my;
-
                 break;
             case ViewItems.TEMPLATE_3:
 

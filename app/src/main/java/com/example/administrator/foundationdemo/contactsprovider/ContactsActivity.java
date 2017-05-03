@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
 import com.example.administrator.foundationdemo.contactsprovider.contactsservice.ContactsService;
 import com.example.administrator.foundationdemo.contactsprovider.domain.ContactText;
 

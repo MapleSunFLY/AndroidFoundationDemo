@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.administrator.foundationdemo.R;
+
+import com.brothers.fly.aichebao.R;
 import com.example.administrator.foundationdemo.xmlparsepull.domain.Person;
 import com.example.administrator.foundationdemo.xmlparsepull.service.PersonService;
 

@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
 import com.example.administrator.foundationdemo.sqlite.domain.Person;
 import com.example.administrator.foundationdemo.sqlite.service.MySQLite;
 import com.example.administrator.foundationdemo.sqlite.service.PersonSQLite;

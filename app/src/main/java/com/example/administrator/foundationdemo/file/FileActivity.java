@@ -9,7 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.administrator.foundationdemo.R;
+import com.brothers.fly.aichebao.R;
+
 
 public class FileActivity extends AppCompatActivity {
 

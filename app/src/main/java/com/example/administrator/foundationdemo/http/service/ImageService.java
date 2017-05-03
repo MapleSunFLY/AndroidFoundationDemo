@@ -29,4 +29,19 @@ public class ImageService {
         }
         return null;
     }
+
+    public static InputStream getImageStream(String path) throws IOException {
+        URL url = new URL(path);
+        HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();//得到基于HTTP协议的链接对象
+        httpURLConnection.setConnectTimeout(5000);//请求超时时间
+        httpURLConnection.setRequestMethod("GET");//请求方式
+
+        if (httpURLConnection.getResponseCode() == 200){
+            InputStream inputStream = httpURLConnection.getInputStream();
+            return inputStream;
+        }else {
+            Log.d("FLY","请求失败"+httpURLConnection.getResponseCode());
+        }
+        return null;
+    }
 }

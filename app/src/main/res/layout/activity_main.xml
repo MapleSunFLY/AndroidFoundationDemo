@@ -88,6 +88,11 @@
                 android:id="@+id/get_photo"
                 style="@style/WrapWrap"
                 android:text="获取相册"/>
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/map"
+                style="@style/WrapWrap"
+                android:text="高德地图"/>
         </LinearLayout>
 
     </ScrollView>
