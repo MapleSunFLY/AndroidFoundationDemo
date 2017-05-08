@@ -93,6 +93,11 @@
                 android:id="@+id/map"
                 style="@style/WrapWrap"
                 android:text="高德地图"/>
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/dialog"
+                style="@style/WrapWrap"
+                android:text="Dialog"/>
         </LinearLayout>
 
     </ScrollView>

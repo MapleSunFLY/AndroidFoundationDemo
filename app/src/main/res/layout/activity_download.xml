@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchMatch"
+    tools:context="com.example.administrator.foundationdemo.dialog.DialogActivity">
+
+    <Button
+        android:id="@+id/download_img"
+        style="@style/WrapWrap"
+        android:text="图片框"/>
+</LinearLayout>
