@@ -95,7 +95,8 @@
         <!-- 高德地图定位 -->
         <service android:name="com.amap.api.location.APSService" />
 
-        <activity android:name="com.example.administrator.foundationdemo.dialog.DialogActivity"></activity>
+        <activity android:name="com.example.administrator.foundationdemo.dialog.DialogActivity" />
+        <activity android:name="com.example.administrator.foundationdemo.mvp.LoginActivity"></activity>
     </application>
 
 </manifest>

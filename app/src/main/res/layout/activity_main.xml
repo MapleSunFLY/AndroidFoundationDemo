@@ -98,6 +98,11 @@
                 android:id="@+id/dialog"
                 style="@style/WrapWrap"
                 android:text="Dialog"/>
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/mvp_login"
+                style="@style/WrapWrap"
+                android:text="MVP_login"/>
         </LinearLayout>
 
     </ScrollView>

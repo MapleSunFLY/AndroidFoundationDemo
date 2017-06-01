@@ -14,6 +14,7 @@ import com.example.administrator.foundationdemo.file.FileActivity;
 import com.example.administrator.foundationdemo.getphoto.GetPhotoActivity;
 import com.example.administrator.foundationdemo.http.HttpImageActivity;
 import com.example.administrator.foundationdemo.map.MapActivity;
+import com.example.administrator.foundationdemo.mvp.LoginActivity;
 import com.example.administrator.foundationdemo.myfileobserver.FileObserverActivity;
 import com.example.administrator.foundationdemo.phonecall.PhoneCallActivity;
 import com.example.administrator.foundationdemo.provider.ProviderActivity;
@@ -88,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.dialog:
                 mIntent.setClass(MainActivity.this, DialogActivity.class);
+                break;
+            case R.id.mvp_login:
+                mIntent.setClass(MainActivity.this, LoginActivity.class);
                 break;
             default:
                 Toast.makeText(this,"What did you do",Toast.LENGTH_SHORT).show();
